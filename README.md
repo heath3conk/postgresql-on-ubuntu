@@ -25,7 +25,7 @@ http://www.techonthenet.com/postgresql/change_password.php
 https://www.postgresql.org/docs/9.5/static/sql-alterrole.html 
 
 ## Exit postgres
-`\d`
+`\d` or Ctrl-d
 
 ## Change password in DBC-Sinatra challenges
 Go to the database.rb file & change the password at the bottom of the file to the password you've set in postgres (not your primary/admin password, the one you just set for pg).
