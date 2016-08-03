@@ -1,5 +1,6 @@
 # postgresql-on-ubuntu
 Problem solving on initial setup (Dev Bootcamp version)
+
 *Note: I have Ubuntu v. 14.04. These references/instructions seemed to work equally well for users with Ubuntu 16.x*
 
 ## Install postgres (if you haven't already)
