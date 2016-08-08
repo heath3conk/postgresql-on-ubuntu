@@ -36,7 +36,7 @@ Go to the database.rb file & change the password at the bottom of the file to th
 If you get an error on bundle install that says "failed to build native extensions"...try `sudo apt-get install libpq-dev` 
 
 # Updating/Upgrading Postgresql
-* I updated my Ubuntu version from 14.04 to 16.04 and got a warning that my postgresql version was out of date. It looked like the OS update had given me a later postgres version but parts were still old. Specificaly, when I went into psql on my terminal, it said I had "psql (9.5.3, server 9.3.13)" which matched the warning I'd gotten while I was upgrading Ubuntu.
+*I updated my Ubuntu version from 14.04 to 16.04 and got a warning that my postgresql version was out of date. It looked like the OS update had given me a later postgres version but parts were still old. Specificaly, when I went into psql on my terminal, it said I had "psql (9.5.3, server 9.3.13)" which matched the warning I'd gotten while I was upgrading Ubuntu.*
    - Update packages available with `sudo apt-get update`
    - Upgrade packages with `sudo apt-get upgrade`
    - Remove the postgres 9.5 main cluster `sudo pg_dropcluster 9.5 main --stop`
