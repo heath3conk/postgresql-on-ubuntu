@@ -18,6 +18,9 @@ The ubuntu.com site above references this. Also see https://www.postgresql.org/d
 `psql` gets you in.
 `\du` *should* present you with a list of users and roles. You should see yourself listed on there as a superuser
 
+## database "<user>" does not exist?
+If, when attempting to enter with 'psql' you recevieve the error "psql: FATAL: database "<user>" does not exist, then your package failed to automatically create the starting database for you.  Try 'createdb' to force it to do this.
+
 ## Change/set your password
 If you're not already in postgres: `psql` to get int.
 `ALTER USER username WITH ENCRYPTED PASSWORD 'new_password' VALID UNTIL 'expiration;'`
@@ -34,6 +37,9 @@ Go to the database.rb file & change the password at the bottom of the file to th
 # Miscellaneous Issues
 ## Ruby gems not installing correctly
 If you get an error on bundle install that says "failed to build native extensions"...try `sudo apt-get install libpq-dev` 
+
+## Can't Find Header Files
+If you get an error on bundle install that says "can't find headers for ruby at..." try 'sudo apt-get install ruby-dev'
 
 # Updating/Upgrading Postgresql
 *I updated my Ubuntu version from 14.04 to 16.04 and got a warning that my postgresql version was out of date. It looked like the OS update had given me a later postgres version but parts were still old. Specificaly, when I went into psql on my terminal, it said I had "psql (9.5.3, server 9.3.13)" which matched the warning I'd gotten while I was upgrading Ubuntu.*
