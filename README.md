@@ -23,8 +23,8 @@ If, when attempting to enter with 'psql' you recevieve the error "psql: FATAL: d
 
 ## Change/set your password
 If you're not already in postgres: `psql` to get int.
-`ALTER USER username WITH ENCRYPTED PASSWORD 'new_password' VALID UNTIL 'expiration;'`
-"Expiration" could be either a specific date (formatted as `'Jan 1, 2015'`) or `'infinity'`.
+`ALTER USER username WITH ENCRYPTED PASSWORD 'new_password' VALID UNTIL 'expiration';`
+"Expiration" could be either a specific date (formatted as `'Jan 1, 2015'`) or `'infinity'`. DO NOT forget to put the semi-colon at the end! After you enter this command, postgres should respond ALTER USER and that's how you know it's done.
 http://www.techonthenet.com/postgresql/change_password.php
 https://www.postgresql.org/docs/9.5/static/sql-alterrole.html 
 
